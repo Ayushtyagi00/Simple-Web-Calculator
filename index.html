@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="CalHead">
+        <h1>
+            Calculator
+        </h1>
+    </div>
+    <div id="CalBody">
+        <div id="CalInput">
+            <input type="text" id="Input" readonly>
+        </div>
+        <div id="CalBtn">
+            <div class="BtnRow">
+                <button class="Btn" onclick="currentvalue = '';
+                document.getElementById('Input').value = currentvalue;">AC</button>
+                <button class="Btn" onclick=" clearfunction()
+                document.getElementById('Input').value = currentvalue;">C</button>
+                <button class="Btn" onclick="currentvalue = currentvalue + '%';
+                document.getElementById('Input').value = currentvalue;">%</button>
+                <button class="Btn" onclick=" currentvalue = currentvalue + '/';
+                document.getElementById('Input').value = currentvalue;">/</button>
+            </div>
+            <div class="BtnRow">
+                <button class="Btn" onclick="currentvalue = currentvalue + '7';
+                document.getElementById('Input').value = currentvalue;">7</button>
+                <button class="Btn" onclick="currentvalue = currentvalue + '8';
+                document.getElementById('Input').value = currentvalue;">8</button>
+                <button class="Btn" onclick="currentvalue = currentvalue + '9';
+                document.getElementById('Input').value = currentvalue;">9</button>
+                <button class="Btn" onclick="currentvalue = currentvalue + '*';
+                document.getElementById('Input').value = currentvalue;">*</button>
+            </div>
+            <div class="BtnRow">
+                <button class="Btn" onclick="currentvalue = currentvalue + '4';
+                document.getElementById('Input').value = currentvalue;">4</button>
+                <button class="Btn" onclick="currentvalue = currentvalue + '5';
+                document.getElementById('Input').value = currentvalue;">5</button>
+                <button class="Btn" onclick="currentvalue = currentvalue + '6';
+                document.getElementById('Input').value = currentvalue;">6</button>
+                <button class="Btn" onclick="currentvalue = currentvalue + '-';
+                document.getElementById('Input').value = currentvalue;">-</button>
+            </div>
+            <div class="BtnRow">
+                <button class="Btn" onclick="currentvalue = currentvalue + '1';
+                document.getElementById('Input').value = currentvalue;">1</button>
+                <button class="Btn" onclick="currentvalue = currentvalue + '2';
+                document.getElementById('Input').value = currentvalue;">2</button>
+                <button class="Btn" onclick="currentvalue = currentvalue + '3';
+                document.getElementById('Input').value = currentvalue;">3</button>
+                <button class="Btn" onclick="currentvalue = currentvalue + '+';
+                document.getElementById('Input').value = currentvalue;">+</button>
+            </div>
+            <div class="BtnRow">
+                <button class="Btn" onclick="currentvalue = currentvalue + '00';
+                document.getElementById('Input').value = currentvalue;">00</button>
+                <button class="Btn" onclick="currentvalue = currentvalue + '0';
+                document.getElementById('Input').value = currentvalue;">0</button>
+                <button class="Btn" onclick="currentvalue = currentvalue + '.';
+                document.getElementById('Input').value = currentvalue;">.</button>
+                <button class="Btn" onclick=" let Finalvalue = eval(currentvalue);
+                currentvalue = Finalvalue;
+                document.getElementById('Input').value = currentvalue;">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

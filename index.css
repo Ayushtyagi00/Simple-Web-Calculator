@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+}
+
+#CalHead {
+    margin: auto;
+    width: 25%;
+    color: #ff511c;
+}
+
+#CalHead h1 {
+    text-align: center;
+    font-size: 70px;
+    /* Media Query for the same is needed */
+}
+
+#CalBody {
+    border-radius: 30px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 50%;
+    height: 550px;
+    margin: auto;
+}
+
+#CalBtn {
+    margin-top: 20px;
+}
+
+#CalInput {
+    display: flex;
+    justify-content: center;
+}
+
+#Input {
+    border-radius: 50px;
+    margin-top: 20px;
+    width: 60%;
+    height: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.BtnRow {
+    display: flex;
+    column-gap: 12%;
+    justify-content: center;
+    margin: 2.5% 0;
+}
+
+.Btn {
+    display: flex;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    color: aliceblue;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid #ff511c;
+    background-color: #ff511c;
+}
+
+.Btn:hover {
+    cursor: pointer;
+}
